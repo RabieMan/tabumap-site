@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl" data-lang="he">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>TabuMap – גוש וחלקה בשטח | RabieMan Labs</title>
+<meta name="description" content="אפליקציית שטח לאיתור גוש וחלקה לפי GPS, עם גבולות מגרשים ושטחים רשומים על גבי מפה. יוזמה פרטית של RabieMan Labs.">
+<meta name="theme-color" content="#0f172a">
+<link rel="icon" href="icon.svg" type="image/svg+xml">
+<style>
+  :root{--bg:#0f172a;--card:#162133;--line:#2b3a50;--ink:#f1f5f9;--muted:#94a3b8;--accent:#10b981;--accent-ink:#04261b;--gold:#f0a63a}
+  *{box-sizing:border-box}
+  body{margin:0;background:var(--bg);color:var(--ink);font-family:"Heebo",system-ui,-apple-system,"Segoe UI",Arial,sans-serif;line-height:1.6}
+  .wrap{max-width:880px;margin:0 auto;padding:28px 20px 40px}
+  header{display:flex;justify-content:space-between;align-items:center;gap:12px}
+  .lab{color:var(--muted);font-size:13px;text-decoration:none}
+  .lang{display:flex;gap:4px;background:var(--card);border:1px solid var(--line);border-radius:999px;padding:3px}
+  .lang button{border:0;background:none;color:var(--muted);font:inherit;font-size:13px;font-weight:600;padding:4px 10px;border-radius:999px;cursor:pointer}
+  .lang button.on{background:var(--accent);color:var(--accent-ink)}
+  .hero{display:grid;grid-template-columns:120px 1fr;gap:24px;align-items:center;margin:40px 0 28px}
+  .hero img{width:120px;height:120px}
+  h1{font-size:32px;margin:0 0 6px;line-height:1.2}
+  h1 .m{color:var(--gold)}
+  .badge{display:inline-block;background:rgba(240,166,58,.14);color:var(--gold);border-radius:999px;padding:3px 12px;font-size:13px;font-weight:700;margin-bottom:10px}
+  .lead{color:#cbd5e1;font-size:17px;margin:0}
+  .pills{display:flex;flex-wrap:wrap;gap:8px;margin:22px 0}
+  .pill{background:var(--card);border:1px solid var(--line);border-radius:999px;padding:6px 14px;font-size:14px}
+  .pill.soon{color:var(--muted)}
+  .cta{display:flex;flex-wrap:wrap;gap:10px;margin:8px 0 30px}
+  .btn{border-radius:12px;padding:12px 20px;font-weight:700;text-decoration:none;font-size:15px;border:1px solid var(--accent)}
+  .btn.primary{background:var(--accent);color:var(--accent-ink)}
+  .btn.ghost{color:var(--muted);border-color:var(--line);cursor:default}
+  .note{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:14px 16px;color:var(--muted);font-size:14px}
+  footer{margin-top:36px;border-top:1px solid var(--line);padding-top:16px;color:var(--muted);font-size:13px;display:flex;flex-wrap:wrap;gap:14px;justify-content:space-between}
+  footer a{color:var(--muted)}
+  html[data-lang="he"] [data-l]:not([data-l="he"]),html[data-lang="ar"] [data-l]:not([data-l="ar"]),html[data-lang="en"] [data-l]:not([data-l="en"]){display:none !important}
+  @media (max-width:560px){.hero{grid-template-columns:1fr;text-align:center}.hero img{margin:0 auto}h1{font-size:26px}}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <a class="lab" href="https://rabieman.github.io/">RabieMan Labs</a>
+    <div class="lang" role="group" aria-label="שפה">
+      <button data-set="he" class="on">עברית</button><button data-set="ar">العربية</button><button data-set="en">English</button>
+    </div>
+  </header>
+
+  <section class="hero">
+    <img src="icon.svg" alt="TabuMap">
+    <div>
+      <span class="badge" data-l="he">בפיתוח</span><span class="badge" data-l="ar">قيد التطوير</span><span class="badge" data-l="en">In development</span>
+      <h1><span dir="ltr">Tabu<span class="m">Map</span></span>
+        <span data-l="he">– גוש וחלקה בשטח</span><span data-l="ar">– حوض وقسيمة في الميدان</span><span data-l="en">– Field Parcel &amp; Block Locator</span></h1>
+      <p class="lead" data-l="he">אפליקציית שטח לאיתור גוש וחלקה לפי מיקום GPS, עם גבולות מגרשים ושטחים רשומים על גבי מפה. בהמשך: תוכניות בנייה ומפענח נסחי טאבו בשפה פשוטה.</p>
+      <p class="lead" data-l="ar">تطبيق ميداني لتحديد رقم الحوض والقسيمة حسب موقع الـ GPS، مع عرض حدود القسائم والمساحات المسجلة على الخارطة. قريباً: الخرائط الهيكلية ومحلل ذكي لسندات الطابو بلغة بسيطة.</p>
+      <p class="lead" data-l="en">Field app for locating land block and parcel numbers via GPS, showing parcel boundaries and registered areas on a map. Coming soon: zoning plans and a plain-language Tabu extract analyzer.</p>
+    </div>
+  </section>
+
+  <div class="pills" data-l="he"><span class="pill">📍 איתור חלקה ב-GPS</span><span class="pill">🗺️ מפת גושים וחלקות</span><span class="pill soon">🤖 מפענח נסחים (בקרוב)</span></div>
+  <div class="pills" data-l="ar"><span class="pill">📍 تحديد قسيمة بـ GPS</span><span class="pill">🗺️ خارطة أحواض وقسائم</span><span class="pill soon">🤖 محلل سندات (قريباً)</span></div>
+  <div class="pills" data-l="en"><span class="pill">📍 GPS Parcel Lookup</span><span class="pill">🗺️ Cadastre Map</span><span class="pill soon">🤖 Extract Parser (Soon)</span></div>
+
+  <div class="cta">
+    <a class="btn primary" href="app/"><span data-l="he">פתח את גרסת הבטא</span><span data-l="ar">افتح النسخة التجريبية</span><span data-l="en">Open the beta</span></a>
+    <span class="btn ghost"><span data-l="he">בקרוב ב-Google Play</span><span data-l="ar">قريباً على Google Play</span><span data-l="en">Coming soon to Google Play</span></span>
+  </div>
+
+  <div class="note">
+    <span data-l="he">יוזמה פרטית של RabieMan Labs, אינה שירות ממשלתי רשמי. המידע מבוסס על מאגרי המידע הפתוחים של המרכז למיפוי ישראל (data.gov.il), אינו מקור מוסמך לגבולות ואינו מחליף נסח טאבו.</span>
+    <span data-l="ar">مبادرة خاصة من RabieMan Labs، وليست خدمة حكومية رسمية. المعلومات مبنية على قواعد البيانات المفتوحة لمركز مسح إسرائيل (data.gov.il)، وليست مصدراً رسمياً للحدود ولا تغني عن سند الطابو.</span>
+    <span data-l="en">A private initiative by RabieMan Labs, not an official government service. Based on the Survey of Israel's open data (data.gov.il); not an authoritative source for boundaries and no substitute for a land registry extract.</span>
+  </div>
+
+  <footer>
+    <span>© RabieMan Labs</span>
+    <span><a href="privacy.html"><span data-l="he">מדיניות פרטיות</span><span data-l="ar">سياسة الخصوصية</span><span data-l="en">Privacy policy</span></a>
+      · rabieman.labs+tabumap@gmail.com</span>
+  </footer>
+</div>
+<script>
+  const set = l => {
+    document.documentElement.dataset.lang = l;
+    document.documentElement.lang = l;
+    document.documentElement.dir = l === 'en' ? 'ltr' : 'rtl';
+    document.querySelectorAll('.lang button').forEach(b => b.classList.toggle('on', b.dataset.set === l));
+    try { localStorage.setItem('tabumap-lang', l); } catch {}
+  };
+  document.querySelectorAll('.lang button').forEach(b => b.onclick = () => set(b.dataset.set));
+  let l = 'he'; try { l = localStorage.getItem('tabumap-lang') || (navigator.language || '').slice(0, 2); } catch {}
+  set(['he', 'ar', 'en'].includes(l) ? l : 'he');
+</script>
+</body>
+</html>

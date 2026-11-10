@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl" data-lang="he">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>מדיניות פרטיות – TabuMap</title>
+<meta name="theme-color" content="#0f172a">
+<link rel="icon" href="icon.svg" type="image/svg+xml">
+<style>
+  :root{--bg:#0f172a;--card:#162133;--line:#2b3a50;--ink:#f1f5f9;--muted:#94a3b8;--accent:#10b981;--accent-ink:#04261b}
+  body{margin:0;background:var(--bg);color:var(--ink);font-family:"Heebo",system-ui,-apple-system,"Segoe UI",Arial,sans-serif;line-height:1.7}
+  .wrap{max-width:760px;margin:0 auto;padding:28px 20px 40px}
+  header{display:flex;justify-content:space-between;align-items:center;gap:12px}
+  a{color:var(--accent)}
+  .lang{display:flex;gap:4px;background:var(--card);border:1px solid var(--line);border-radius:999px;padding:3px}
+  .lang button{border:0;background:none;color:var(--muted);font:inherit;font-size:13px;font-weight:600;padding:4px 10px;border-radius:999px;cursor:pointer}
+  .lang button.on{background:var(--accent);color:var(--accent-ink)}
+  h1{font-size:26px;margin:28px 0 4px}
+  h2{font-size:18px;margin:24px 0 6px}
+  .muted{color:var(--muted);font-size:14px}
+  html[data-lang="he"] [data-l]:not([data-l="he"]),html[data-lang="ar"] [data-l]:not([data-l="ar"]),html[data-lang="en"] [data-l]:not([data-l="en"]){display:none !important}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <a href="./">← TabuMap</a>
+    <div class="lang"><button data-set="he" class="on">עברית</button><button data-set="ar">العربية</button><button data-set="en">English</button></div>
+  </header>
+
+  <section data-l="he">
+    <h1>מדיניות פרטיות – TabuMap</h1>
+    <p class="muted">עדכון אחרון: 10 בנובמבר 2026 · מפתח: RabieMan Labs</p>
+    <h2>בקצרה</h2>
+    <p>TabuMap לא דורשת הרשמה, לא אוספת פרטים אישיים ולא שומרת את המיקום שלך בשרת כלשהו.</p>
+    <h2>מיקום</h2>
+    <p>כשאתה לוחץ "איפה אני עומד?", המיקום מחושב במכשיר ומשמש רק כדי למצוא את החלקה שאתה עומד בה. הוא לא נשלח אלינו ולא נשמר אצלנו. אפשר להשתמש באפליקציה גם בלי לאשר מיקום, בלחיצה על המפה.</p>
+    <h2>אילו שירותים מקבלים בקשות</h2>
+    <ul>
+      <li>נתוני החלקות נטענים מהאתר שלנו, המתארח ב-GitHub Pages. כמו כל אתר, GitHub רואה כתובת IP של הבקשה.</li>
+      <li>מפת הרקע נטענת מ-OpenFreeMap, ובגרסת הפיתוח גם תצלומי לוויין מ-Esri. השירותים האלה מקבלים את אזור המפה שמוצג ואת כתובת ה-IP, כמו בכל אפליקציית מפות.</li>
+      <li>קישורים לשירותים חיצוניים (נסח טאבו, GovMap, XPLAN, אתר הנדל״ן הממשלתי) נפתחים באתרים שלהם, ובכפוף למדיניות שלהם.</li>
+    </ul>
+    <h2>מידע שנשמר במכשיר</h2>
+    <p>האפליקציה עשויה לשמור במכשיר שלך העדפות (כמו שפה) וחלקות ששמרת. המידע הזה נשאר אצלך ונמחק עם מחיקת האפליקציה או נתוני הדפדפן.</p>
+    <h2>תכונות עתידיות</h2>
+    <p>כשיתווסף מפענח נסחי טאבו, המדיניות תעודכן לפני ההשקה ותפרט בדיוק מה נשלח לעיבוד ומה לא נשמר.</p>
+    <h2>מקור הנתונים והבהרה</h2>
+    <p>TabuMap היא יוזמה פרטית ואינה שירות ממשלתי. המידע מבוסס על שכבת החלקות הפתוחה של המרכז למיפוי ישראל (data.gov.il), אינו מקור מוסמך לגבולות ואינו מחליף נסח טאבו.</p>
+    <h2>יצירת קשר</h2>
+    <p>rabieman.labs+tabumap@gmail.com</p>
+  </section>
+
+  <section data-l="ar">
+    <h1>سياسة الخصوصية – TabuMap</h1>
+    <p class="muted">آخر تحديث: 10 نوفمبر 2026 · المطوّر: RabieMan Labs</p>
+    <p>لا يتطلب TabuMap تسجيلاً، ولا يجمع معلومات شخصية، ولا يحفظ موقعك على أي خادم. يُستخدم الموقع داخل الجهاز فقط لتحديد القسيمة التي تقف فيها. تُحمَّل بيانات القسائم من موقعنا على GitHub Pages، وخريطة الخلفية من OpenFreeMap (وصور الأقمار الصناعية من Esri في نسخة التطوير)، وهذه الخدمات ترى عنوان IP والمنطقة المعروضة كما في أي تطبيق خرائط. التفضيلات والقسائم المحفوظة تبقى على جهازك فقط.</p>
+    <p>مبادرة خاصة وليست خدمة حكومية. المعلومات مبنية على البيانات المفتوحة لمركز مسح إسرائيل (data.gov.il) ولا تغني عن سند الطابو.</p>
+    <p>للتواصل: rabieman.labs+tabumap@gmail.com</p>
+  </section>
+
+  <section data-l="en">
+    <h1>Privacy Policy – TabuMap</h1>
+    <p class="muted">Last updated: November 10, 2026 · Developer: RabieMan Labs</p>
+    <h2>Summary</h2>
+    <p>TabuMap requires no account, collects no personal information and does not store your location on any server.</p>
+    <h2>Location</h2>
+    <p>When you tap "Where am I?", your location is used on your device only, to find the parcel you are standing in. It is not sent to us or stored by us. You can also use the app without location access by tapping the map.</p>
+    <h2>Services that receive requests</h2>
+    <ul>
+      <li>Parcel data is loaded from our site, hosted on GitHub Pages, which sees the request's IP address like any website.</li>
+      <li>The background map is loaded from OpenFreeMap, and in the development version satellite imagery from Esri. These services receive the map area shown and your IP address, as with any map app.</li>
+      <li>Links to external services (land registry extract, GovMap, XPLAN, the government real-estate site) open on those sites under their own policies.</li>
+    </ul>
+    <h2>Data stored on your device</h2>
+    <p>The app may store preferences (such as language) and parcels you save on your device. This stays with you and is deleted when you remove the app or clear browser data.</p>
+    <h2>Future features</h2>
+    <p>Before a Tabu extract parser is released, this policy will be updated to state exactly what is sent for processing and what is not kept.</p>
+    <h2>Data source and disclaimer</h2>
+    <p>TabuMap is a private initiative, not a government service. It is based on the Survey of Israel's open parcel layer (data.gov.il), is not an authoritative source for boundaries, and is no substitute for a land registry extract.</p>
+    <h2>Contact</h2>
+    <p>rabieman.labs+tabumap@gmail.com</p>
+  </section>
+</div>
+<script>
+  const set = l => {
+    document.documentElement.dataset.lang = l; document.documentElement.lang = l;
+    document.documentElement.dir = l === 'en' ? 'ltr' : 'rtl';
+    document.querySelectorAll('.lang button').forEach(b => b.classList.toggle('on', b.dataset.set === l));
+    try { localStorage.setItem('tabumap-lang', l); } catch {}
+  };
+  document.querySelectorAll('.lang button').forEach(b => b.onclick = () => set(b.dataset.set));
+  let l = 'he'; try { l = localStorage.getItem('tabumap-lang') || (navigator.language || '').slice(0, 2); } catch {}
+  set(['he', 'ar', 'en'].includes(l) ? l : 'he');
+</script>
+</body>
+</html>

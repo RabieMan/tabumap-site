@@ -1,0 +1,41 @@
+name: Publish landing page changes
+
+# The site is served from gh-pages, which the build in the private tabumap-app repo
+# replaces about once a month (app + parcel data). This workflow copies landing-page
+# edits made on main into gh-pages right away, without rebuilding the data.
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: site-deploy
+  cancel-in-progress: false
+
+jobs:
+  sync:
+    runs-on: ubuntu-24.04
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          path: src
+      - name: Copy landing files into gh-pages
+        env:
+          TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          if ! git ls-remote --exit-code --heads "https://github.com/${GITHUB_REPOSITORY}.git" gh-pages >/dev/null; then
+            echo "gh-pages does not exist yet. Run the data build in tabumap-app first." >> "$GITHUB_STEP_SUMMARY"
+            exit 0
+          fi
+          git clone -q --depth 1 --branch gh-pages "https://x-access-token:${TOKEN}@github.com/${GITHUB_REPOSITORY}.git" pages
+          rsync -a --exclude .git --exclude .github --exclude app src/ pages/
+          cd pages
+          touch .nojekyll
+          git add -A
+          if git diff --cached --quiet; then echo "No landing changes."; exit 0; fi
+          git -c user.name="RabieMan Labs bot" -c user.email="rabieman.labs@gmail.com" \
+            commit -q -m "Landing update from main ${GITHUB_SHA::7}"
+          git push -q origin gh-pages
