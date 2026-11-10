@@ -4,7 +4,7 @@ Public landing page, privacy policy and terms for TabuMap, served by GitHub Page
 The app code and data pipeline live in the private repo `RabieMan/tabumap-app`.
 
 - Home: https://rabieman.github.io/tabumap-site/
-- Web beta: https://rabieman.github.io/tabumap-site/app/
+
 - Privacy policy: https://rabieman.github.io/tabumap-site/privacy.html
 - Terms of use: https://rabieman.github.io/tabumap-site/terms.html
 
