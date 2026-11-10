@@ -1,97 +1,61 @@
 <!DOCTYPE html>
-<html lang="he" dir="rtl" data-lang="he">
+<html lang="he" dir="rtl">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>מדיניות פרטיות – TabuMap</title>
-<meta name="theme-color" content="#0f172a">
-<link rel="icon" href="icon.svg" type="image/svg+xml">
+<title>TabuMap – מדיניות פרטיות / Privacy policy</title>
+<link rel="icon" href="img/icon.png">
 <style>
-  :root{--bg:#0f172a;--card:#162133;--line:#2b3a50;--ink:#f1f5f9;--muted:#94a3b8;--accent:#10b981;--accent-ink:#04261b}
-  body{margin:0;background:var(--bg);color:var(--ink);font-family:"Heebo",system-ui,-apple-system,"Segoe UI",Arial,sans-serif;line-height:1.7}
-  .wrap{max-width:760px;margin:0 auto;padding:28px 20px 40px}
-  header{display:flex;justify-content:space-between;align-items:center;gap:12px}
-  a{color:var(--accent)}
-  .lang{display:flex;gap:4px;background:var(--card);border:1px solid var(--line);border-radius:999px;padding:3px}
-  .lang button{border:0;background:none;color:var(--muted);font:inherit;font-size:13px;font-weight:600;padding:4px 10px;border-radius:999px;cursor:pointer}
-  .lang button.on{background:var(--accent);color:var(--accent-ink)}
-  h1{font-size:26px;margin:28px 0 4px}
-  h2{font-size:18px;margin:24px 0 6px}
-  .muted{color:var(--muted);font-size:14px}
-  html[data-lang="he"] [data-l]:not([data-l="he"]),html[data-lang="ar"] [data-l]:not([data-l="ar"]),html[data-lang="en"] [data-l]:not([data-l="en"]){display:none !important}
+body{font-family:Heebo,system-ui,sans-serif;background:#0a0c0f;color:#dfe6ee;max-width:760px;margin:0 auto;padding:24px 18px 60px;line-height:1.65}
+h1{font-size:24px}h2{font-size:18px;margin-top:28px;color:#f0a63a}section{border-top:1px solid #222b35;margin-top:30px;padding-top:6px}
+a{color:#9ccbff}small{color:#8b96a3}[dir=ltr]{text-align:left}
+.pub{display:flex;align-items:center;gap:12px;margin:0 0 18px;padding:10px 14px;border:1px solid #222b35;border-radius:14px;background:#10151c;width:max-content;max-width:100%}.pub img{width:52px;height:52px;border-radius:50%;box-shadow:0 0 18px rgba(80,200,255,.25)}.pub b{display:block;color:#fff;font-size:16px}.pub small{display:block;color:#8b96a3;font-size:12.5px}
 </style>
 </head>
 <body>
-<div class="wrap">
-  <header>
-    <a href="./">← TabuMap</a>
-    <div class="lang"><button data-set="he" class="on">עברית</button><button data-set="ar">العربية</button><button data-set="en">English</button></div>
-  </header>
-
-  <section data-l="he">
-    <h1>מדיניות פרטיות – TabuMap</h1>
-    <p class="muted">עדכון אחרון: 10 בנובמבר 2026 · מפתח: RabieMan Labs</p>
-    <h2>בקצרה</h2>
-    <p>TabuMap לא דורשת הרשמה, לא אוספת פרטים אישיים ולא שומרת את המיקום שלך בשרת כלשהו.</p>
-    <h2>מיקום</h2>
-    <p>כשאתה לוחץ "איפה אני עומד?", המיקום מחושב במכשיר ומשמש רק כדי למצוא את החלקה שאתה עומד בה. הוא לא נשלח אלינו ולא נשמר אצלנו. אפשר להשתמש באפליקציה גם בלי לאשר מיקום, בלחיצה על המפה.</p>
-    <h2>אילו שירותים מקבלים בקשות</h2>
-    <ul>
-      <li>נתוני החלקות נטענים מהאתר שלנו, המתארח ב-GitHub Pages. כמו כל אתר, GitHub רואה כתובת IP של הבקשה.</li>
-      <li>מפת הרקע נטענת מ-OpenFreeMap, ובגרסת הפיתוח גם תצלומי לוויין מ-Esri. השירותים האלה מקבלים את אזור המפה שמוצג ואת כתובת ה-IP, כמו בכל אפליקציית מפות.</li>
-      <li>קישורים לשירותים חיצוניים (נסח טאבו, GovMap, XPLAN, אתר הנדל״ן הממשלתי) נפתחים באתרים שלהם, ובכפוף למדיניות שלהם.</li>
-    </ul>
-    <h2>מידע שנשמר במכשיר</h2>
-    <p>האפליקציה עשויה לשמור במכשיר שלך העדפות (כמו שפה) וחלקות ששמרת. המידע הזה נשאר אצלך ונמחק עם מחיקת האפליקציה או נתוני הדפדפן.</p>
-    <h2>תכונות עתידיות</h2>
-    <p>כשיתווסף מפענח נסחי טאבו, המדיניות תעודכן לפני ההשקה ותפרט בדיוק מה נשלח לעיבוד ומה לא נשמר.</p>
-    <h2>מקור הנתונים והבהרה</h2>
-    <p>TabuMap היא יוזמה פרטית ואינה שירות ממשלתי. המידע מבוסס על שכבת החלקות הפתוחה של המרכז למיפוי ישראל (data.gov.il), אינו מקור מוסמך לגבולות ואינו מחליף נסח טאבו.</p>
-    <h2>יצירת קשר</h2>
-    <p>rabieman.labs+tabumap@gmail.com</p>
-  </section>
-
-  <section data-l="ar">
-    <h1>سياسة الخصوصية – TabuMap</h1>
-    <p class="muted">آخر تحديث: 10 نوفمبر 2026 · المطوّر: RabieMan Labs</p>
-    <p>لا يتطلب TabuMap تسجيلاً، ولا يجمع معلومات شخصية، ولا يحفظ موقعك على أي خادم. يُستخدم الموقع داخل الجهاز فقط لتحديد القسيمة التي تقف فيها. تُحمَّل بيانات القسائم من موقعنا على GitHub Pages، وخريطة الخلفية من OpenFreeMap (وصور الأقمار الصناعية من Esri في نسخة التطوير)، وهذه الخدمات ترى عنوان IP والمنطقة المعروضة كما في أي تطبيق خرائط. التفضيلات والقسائم المحفوظة تبقى على جهازك فقط.</p>
-    <p>مبادرة خاصة وليست خدمة حكومية. المعلومات مبنية على البيانات المفتوحة لمركز مسح إسرائيل (data.gov.il) ولا تغني عن سند الطابو.</p>
-    <p>للتواصل: rabieman.labs+tabumap@gmail.com</p>
-  </section>
-
-  <section data-l="en">
-    <h1>Privacy Policy – TabuMap</h1>
-    <p class="muted">Last updated: November 10, 2026 · Developer: RabieMan Labs</p>
-    <h2>Summary</h2>
-    <p>TabuMap requires no account, collects no personal information and does not store your location on any server.</p>
-    <h2>Location</h2>
-    <p>When you tap "Where am I?", your location is used on your device only, to find the parcel you are standing in. It is not sent to us or stored by us. You can also use the app without location access by tapping the map.</p>
-    <h2>Services that receive requests</h2>
-    <ul>
-      <li>Parcel data is loaded from our site, hosted on GitHub Pages, which sees the request's IP address like any website.</li>
-      <li>The background map is loaded from OpenFreeMap, and in the development version satellite imagery from Esri. These services receive the map area shown and your IP address, as with any map app.</li>
-      <li>Links to external services (land registry extract, GovMap, XPLAN, the government real-estate site) open on those sites under their own policies.</li>
-    </ul>
-    <h2>Data stored on your device</h2>
-    <p>The app may store preferences (such as language) and parcels you save on your device. This stays with you and is deleted when you remove the app or clear browser data.</p>
-    <h2>Future features</h2>
-    <p>Before a Tabu extract parser is released, this policy will be updated to state exactly what is sent for processing and what is not kept.</p>
-    <h2>Data source and disclaimer</h2>
-    <p>TabuMap is a private initiative, not a government service. It is based on the Survey of Israel's open parcel layer (data.gov.il), is not an authoritative source for boundaries, and is no substitute for a land registry extract.</p>
-    <h2>Contact</h2>
-    <p>rabieman.labs+tabumap@gmail.com</p>
-  </section>
+<p><a href="./">TabuMap</a></p>
+<div class="pub"><img src="img/rabieman-labs.webp" alt="RabieMan Labs logo" width="52" height="52"><div><b>RabieMan Labs</b><small>Publisher · מפרסם · الناشر</small></div></div>
+<div id="he">
+<h1>TabuMap – מדיניות פרטיות</h1>
+<small>עדכון אחרון: נובמבר 2026</small>
+<p>מדיניות זו חלה על TabuMap, באתר ובאפליקציה לאנדרואיד, שמפורסמת על ידי <b>RabieMan Labs</b>. TabuMap היא יוזמה פרטית ואינה שירות של משרד המשפטים, של המרכז למיפוי ישראל או של גוף ממשלתי אחר.</p>
+<h2>איזה מידע אנחנו אוספים</h2>
+<p>אנחנו לא אוספים מידע אישי. אין הרשמה, אין פרסומות, ואין כלי מעקב או ניתוח.</p>
+<h2>מיקום</h2>
+<p>כשאתם לוחצים "איפה אני עומד?", המיקום מחושב במכשיר ומשמש רק כדי למצוא את החלקה שבה אתם נמצאים. הוא לא נשלח אלינו ולא נשמר אצלנו. אפשר להשתמש ב-TabuMap גם בלי הרשאת מיקום, בלחיצה על המפה או בחיפוש.</p>
+<h2>מה נשמר במכשיר</h2>
+<p>העדפות (כמו שפה ותצוגת מפה) וחלקות ששמרתם נשמרות בזיכרון המקומי של המכשיר בלבד, ולא נשלחות אלינו. מחיקת האפליקציה או נתוני הדפדפן מוחקת אותן.</p>
+<h2>פניות לשירותים חיצוניים</h2>
+<p>נתוני החלקות נטענים מהאתר שלנו, המתארח ב-GitHub Pages. מפת הרקע נטענת מ-OpenFreeMap, ותצלומי הלוויין מ-Esri. כמו בכל אפליקציית מפות, השירותים האלה מקבלים את כתובת ה-IP ואת אזור המפה המוצג, בכפוף למדיניות שלהם. איננו מקבלים ואיננו שומרים את הפניות האלה. קישורים להפקת נסח טאבו, ל-GovMap, ל-XPLAN ולאתר הנדל״ן הממשלתי נפתחים באתרים שלהם.</p>
+<h2>תכונות עתידיות</h2>
+<p>לפני שיתווסף מפענח נסחי טאבו, המדיניות תעודכן ותפרט בדיוק מה נשלח לעיבוד, לאן, ומה לא נשמר.</p>
+<h2>שמירה ומחיקה של מידע</h2>
+<p>איננו שומרים מידע על המשתמשים בשרתים שלנו. כל המידע נשמר במכשיר שלכם.</p>
+<h2>שינויים במדיניות</h2>
+<p>עדכונים למדיניות יפורסמו בעמוד זה, עם תאריך העדכון.</p>
+<h2>יצירת קשר</h2>
+<p>שאלות על מדיניות זו: <span dir="ltr"><a href="mailto:rabieman.labs+tabumap@gmail.com">rabieman.labs+tabumap@gmail.com</a></span></p>
 </div>
-<script>
-  const set = l => {
-    document.documentElement.dataset.lang = l; document.documentElement.lang = l;
-    document.documentElement.dir = l === 'en' ? 'ltr' : 'rtl';
-    document.querySelectorAll('.lang button').forEach(b => b.classList.toggle('on', b.dataset.set === l));
-    try { localStorage.setItem('tabumap-lang', l); } catch {}
-  };
-  document.querySelectorAll('.lang button').forEach(b => b.onclick = () => set(b.dataset.set));
-  let l = 'he'; try { l = localStorage.getItem('tabumap-lang') || (navigator.language || '').slice(0, 2); } catch {}
-  set(['he', 'ar', 'en'].includes(l) ? l : 'he');
-</script>
+<section dir="ltr" lang="en">
+<h1>TabuMap – Privacy policy</h1>
+<small>Last updated: November 2026</small>
+<p>This policy applies to TabuMap, on the web and as an Android app, published by <b>RabieMan Labs</b>. TabuMap is a private initiative and is not a service of the Israeli Ministry of Justice, the Survey of Israel or any other government body.</p>
+<h2>What we collect</h2>
+<p>We do not collect personal data. There is no sign-up, no advertising and no tracking or analytics SDK.</p>
+<h2>Location</h2>
+<p>When you tap "Where am I?", your location is used on the device only, to find the parcel you are in. It is not sent to us or stored by us. You can use TabuMap without location access by tapping the map or searching.</p>
+<h2>What stays on your device</h2>
+<p>Preferences (such as language and map view) and parcels you save are stored only in the device's local storage and are never sent to us. Uninstalling the app or clearing browser data deletes them.</p>
+<h2>External services</h2>
+<p>Parcel data is loaded from our site, hosted on GitHub Pages. The background map comes from OpenFreeMap and satellite imagery from Esri. As with any map app, these services receive your IP address and the map area shown, under their own policies. We do not receive or store these requests. Links to the land registry extract service, GovMap, XPLAN and the government real-estate site open on those sites.</p>
+<h2>Future features</h2>
+<p>Before a Tabu extract analyzer is added, this policy will be updated to state exactly what is sent for processing, where, and what is not kept.</p>
+<h2>Data retention and deletion</h2>
+<p>We do not store user data on our servers. Everything is kept on your device.</p>
+<h2>Changes to this policy</h2>
+<p>Updates will be published on this page with the update date.</p>
+<h2>Contact</h2>
+<p>Questions about this policy: <a href="mailto:rabieman.labs+tabumap@gmail.com">rabieman.labs+tabumap@gmail.com</a></p>
+</section>
 </body>
 </html>
