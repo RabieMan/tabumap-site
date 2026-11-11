@@ -6,7 +6,7 @@ Israel's open parcel layer. A private initiative by RabieMan Labs – not a gove
 
 The app code and data pipeline live in the private repo `RabieMan/tabumap-app`. This repo holds only what must be public.
 
-**Status:** in development · app v0.4.1 · coming soon to Google Play
+**Status:** in development · Android app v0.8 (test APKs in the private repo) · coming soon to Google Play
 
 - Home: https://rabieman.github.io/tabumap-site/
 - Privacy policy: https://rabieman.github.io/tabumap-site/privacy.html
@@ -33,10 +33,10 @@ map and satellite, Street View button, Israeli Grid (ITM) coordinates, distance 
 - **`main`** – the pages above. Edit here; every push is copied to `gh-pages` within a minute
   (workflow "Publish landing page changes").
 - **`gh-pages`** – what Pages serves. Rebuilt by `tabumap-app` on demand and on the 3rd of every month:
-  landing from `main` at the root, the web beta under `/app/`, parcel data under `/app/data/`.
+  landing from `main` at the root, parcel data under `/app/data/` (read by the Android app), and at `/app/` a small page for shared parcel links.
   Force-pushed as a single commit, so the repo does not grow. **Do not edit it by hand** – it is overwritten on every build.
 
-The web beta at `/app/` is for testing only and is not linked from the landing page.
+The app code is **not** published here: it ships only inside the Android app. A shared link such as `/app/#17157-41` opens the app when it is installed (Android App Links, verified by `https://rabieman.github.io/.well-known/assetlinks.json`); otherwise it shows the block/parcel, an "open in app" button and a link to the landing page.
 
 ## Contact
 
