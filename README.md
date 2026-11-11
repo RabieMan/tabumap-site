@@ -22,7 +22,7 @@ The app code and data pipeline live in the private repo `RabieMan/tabumap-app`. 
 | `privacy.html` | Privacy policy (he/en): no sign-up, location used on the device only, external services listed (incl. the Street View link) |
 | `terms.html` | Terms of use (he/en): not professional advice, boundaries are illustrative, data accuracy, liability |
 | `licenses.html` | Third-party notices: MapLibre GL, PMTiles, mapbox-gl-rtl-text, Survey of Israel data, OpenFreeMap/OSM, Esri |
-| `img/` | App icon, RabieMan Labs logo, screenshots (`01-measure-he.jpg`, `02-parcel-he.jpg`, `03-gps-he.jpg`) |
+| `img/` | App icon, RabieMan Labs logo, screenshots (`01-gps-he.jpg`, `02-plans-he.jpg`, `03-measure-he.jpg`, `04-pins-he.jpg`) |
 | `.github/workflows/publish-landing.yml` | Copies landing edits from `main` into `gh-pages` |
 
 Features listed on the landing page: GPS parcel lookup with nearby-parcel warning, block/parcel search, parcel card,

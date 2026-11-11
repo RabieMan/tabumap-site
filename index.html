@@ -28,7 +28,7 @@ header{display:flex;align-items:center;gap:12px}header img{width:48px;height:48p
 nav{margin-inline-start:auto;display:flex;gap:14px;font-size:14px;flex-wrap:wrap}a{color:#9ccbff}
 .hero{text-align:center;margin:40px 0 26px}.hero h1{font-size:clamp(26px,5vw,42px);margin:0 0 10px}.hero p{color:#c9d2dc;font-size:17px;max-width:720px;margin:0 auto}
 .badge{display:inline-block;margin-top:16px;background:var(--card);border:1px solid var(--line);border-radius:12px;padding:8px 14px;color:var(--mut);font-size:14px}
-.shots{display:grid;grid-template-columns:repeat(3,minmax(0,240px));justify-content:center;gap:14px;padding:10px 0 18px}.shots img{width:100%;height:auto;display:block;border-radius:16px;border:1px solid var(--line)}@media(max-width:720px){.shots{grid-template-columns:repeat(3,1fr);gap:8px}}
+.shots{display:grid;grid-template-columns:repeat(4,minmax(0,220px));justify-content:center;gap:14px;padding:10px 0 18px}.shots img{width:100%;height:auto;display:block;border-radius:16px;border:1px solid var(--line)}@media(max-width:720px){.shots{grid-template-columns:repeat(2,1fr);gap:10px}}
 .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:12px;margin-top:20px}
 .f{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:16px}.f b{display:block;font-size:16px;margin-bottom:4px}.f span{font-size:24px}.f p{margin:0;color:#c3ccd6;font-size:14px}.f.soon{opacity:.75}.f.soon b::after{content:" · בקרוב";color:var(--acc);font-weight:600;font-size:13px}
 section[lang=en] .f.soon b::after{content:" · soon"}
@@ -47,7 +47,7 @@ footer{border-top:1px solid var(--line);margin-top:40px;padding-top:16px;color:v
 </div>
 
 <div class="shots">
- <img src="img/03-gps-he.jpg?v=2" alt="איתור חלקה לפי GPS, עם נ״צ רשת ישראל בזמן אמת"><img src="img/02-parcel-he.jpg?v=2" alt="כרטיס חלקה: שטחים, דונם ונ״צ ITM של מרכז החלקה"><img src="img/01-measure-he.jpg" alt="מדידת שטח בדונם על גבי החלקות">
+ <img src="img/01-gps-he.jpg" alt="איתור חלקה לפי GPS עם נ״צ רשת ישראל"><img src="img/02-plans-he.jpg" alt="ייעוד הקרקע והתוכניות שחלות על החלקה"><img src="img/03-measure-he.jpg" alt="מדידת החלקה: אורך כל צלע, היקף ושטח בדונם"><img src="img/04-pins-he.jpg" alt="המיקומים שלי: נעצים עם נ״צ וגוש/חלקה">
 </div>
 
 <div class="grid">
@@ -58,6 +58,7 @@ footer{border-top:1px solid var(--line);margin-top:40px;padding-top:16px;color:v
  <div class="f"><span>📷</span><b>Street View</b><p>כפתור בכרטיס החלקה פותח את Google Street View בדיוק בנקודה שבחרתם, כדי לראות את המגרש מהרחוב.</p></div>
  <div class="f"><span>🧭</span><b>נ״צ רשת ישראל</b><p>המיקום שלכם בזמן אמת ונ״צ מרכז החלקה ב-ITM (E/N במטרים), עם העתקה בלחיצה.</p></div>
  <div class="f"><span>📏</span><b>מדידת מרחק ושטח</b><p>מודדים את גבולות החלקה בלחיצה, או מסמנים נקודות על המפה ולפי GPS, ומקבלים אורך כל צלע, היקף ושטח בדונם.</p></div>
+ <div class="f"><span>📍</span><b>המיקומים שלי</b><p>נעצים במפה לפי GPS או בלחיצה ארוכה, עם שם, נ״צ וגוש/חלקה. הקשה מחזירה אל הנקודה.</p></div>
  <div class="f"><span>🏗️</span><b>תוכניות בנייה</b><p>הייעוד של החלקה עם הסבר קצר, והתוכניות שחלות עליה: סטטוס, האם ניתן להוציא מכוחה היתר, וקישור למבא״ת.</p></div>
  <div class="f soon"><span>📄</span><b>מפענח נסח טאבו</b><p>משתפים את ה-PDF של הנסח ומקבלים סיכום ברור: בעלים, משכנתאות, הערות אזהרה ועיקולים.</p></div>
 </div>
@@ -74,6 +75,7 @@ footer{border-top:1px solid var(--line);margin-top:40px;padding-top:16px;color:v
   <div class="f"><span>📷</span><b>Street View</b><p>A button on the parcel card opens Google Street View right at the point you picked, to see the lot from the street.</p></div>
   <div class="f"><span>🧭</span><b>Israeli Grid (ITM)</b><p>Your live position and the parcel centre in ITM (E/N metres), copied with one tap.</p></div>
   <div class="f"><span>📏</span><b>Distance &amp; area</b><p>Measure the parcel boundary in one tap, or mark points on the map or by GPS, and get each side, the perimeter and the area in dunams.</p></div>
+  <div class="f"><span>📍</span><b>My locations</b><p>Pins on the map by GPS or a long press, with a name, coordinates and block/parcel. Tap to go back to the spot.</p></div>
   <div class="f"><span>🏗️</span><b>Zoning plans</b><p>The parcel's land use with a short explanation, and the plans that apply to it: status, whether permits can be issued, and a link to Mavat.</p></div>
   <div class="f soon"><span>📄</span><b>Tabu extract analyzer</b><p>Share the extract PDF and get a clear summary: owners, mortgages, caveats and liens.</p></div>
  </div>
