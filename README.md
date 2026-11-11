@@ -22,11 +22,11 @@ The app code and data pipeline live in the private repo `RabieMan/tabumap-app`. 
 | `privacy.html` | Privacy policy (he/en): no sign-up, location used on the device only, external services listed (incl. the Street View link) |
 | `terms.html` | Terms of use (he/en): not professional advice, boundaries are illustrative, data accuracy, liability |
 | `licenses.html` | Third-party notices: MapLibre GL, PMTiles, mapbox-gl-rtl-text, Survey of Israel data, OpenFreeMap/OSM, Esri |
-| `img/` | App icon, RabieMan Labs logo, screenshots (`01-gush-he.jpg`, `02-parcel-he.jpg`, `03-gps-he.jpg`) |
+| `img/` | App icon, RabieMan Labs logo, screenshots (`01-measure-he.jpg`, `02-parcel-he.jpg`, `03-gps-he.jpg`) |
 | `.github/workflows/publish-landing.yml` | Copies landing edits from `main` into `gh-pages` |
 
 Features listed on the landing page: GPS parcel lookup with nearby-parcel warning, block/parcel search, parcel card,
-map and satellite, Street View button; marked "soon": zoning plans and a Tabu extract analyzer.
+map and satellite, Street View button, Israeli Grid (ITM) coordinates, distance and area measurement; marked "soon": zoning plans and a Tabu extract analyzer.
 
 ## Branches
 
