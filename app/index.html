@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>TabuMap · חלקה ששותפה איתך</title>
+<meta name="description" content="קישור לחלקה ב-TabuMap. הקישור נפתח באפליקציית TabuMap לאנדרואיד.">
+<meta name="robots" content="noindex">
+<meta name="theme-color" content="#0f172a">
+<link rel="icon" href="../img/icon.png">
+<style>
+*{box-sizing:border-box}
+body{margin:0;min-height:100vh;display:grid;place-items:center;font-family:Heebo,system-ui,-apple-system,"Segoe UI",Arial,sans-serif;color:#e7edf3;background:radial-gradient(120% 70% at 50% 0,#1d2c47 0,#0f172a 60%);padding:24px}
+.card{width:100%;max-width:420px;background:#162133;border:1px solid #2b3a50;border-radius:22px;padding:26px 22px;text-align:center;box-shadow:0 20px 50px rgba(0,0,0,.5)}
+img.i{width:84px;height:84px;border-radius:22px}
+h1{margin:10px 0 4px;font-size:28px}h1 b{color:#f0a63a}
+.parcel{margin:16px 0 6px;font-size:22px;font-weight:800}.parcel span{color:#10b981}
+p{color:#a9b4c2;font-size:15px;line-height:1.6;margin:8px 0}
+.btn{display:block;margin:12px 0 0;padding:13px;border-radius:12px;font-weight:700;text-decoration:none;font-size:15px}
+.pri{background:#10b981;color:#04261b}.sec{border:1px solid #2b3a50;color:#e7edf3;background:#0f1a2b}
+.badge{display:inline-block;margin-top:14px;font-size:13px;color:#f6c27a;border:1px solid rgba(240,166,58,.4);padding:5px 12px;border-radius:999px}
+.by{margin-top:18px;font-size:12px;color:#7b879a}
+</style>
+</head>
+<body>
+<div class="card">
+  <img class="i" src="../img/icon.png" alt="">
+  <h1 dir="ltr">Tabu<b>Map</b></h1>
+  <div class="parcel" id="parcel" hidden></div>
+  <p>הקישור הזה נפתח באפליקציית TabuMap לאנדרואיד: גוש וחלקה בשטח, לפי GPS.</p>
+  <a class="btn pri" id="openApp" href="#" hidden>פתח באפליקציה</a>
+  <a class="btn sec" href="../">על TabuMap</a>
+  <div class="badge">בקרוב ב-Google Play</div>
+  <div class="by">© 2026 RabieMan Labs</div>
+</div>
+<script>
+(function(){
+  var m = location.hash.match(/^#(\d+)-(\d+)$/);
+  if (m) { var el = document.getElementById('parcel'); el.innerHTML = 'גוש <span>' + m[1] + '</span> · חלקה <span>' + m[2] + '</span>'; el.hidden = false; }
+  // On Android, an intent link opens the app when it is installed (useful when the link was opened inside a browser)
+  if (/Android/i.test(navigator.userAgent)) {
+    var a = document.getElementById('openApp');
+    a.href = 'intent://rabieman.github.io/tabumap-site/app/' + (m ? '?p=' + m[1] + '-' + m[2] : '') + '#Intent;scheme=https;package=com.rabieman.tabumap;end';
+    a.hidden = false;
+  }
+})();
+</script>
+</body>
+</html>
