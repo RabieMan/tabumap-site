@@ -67,5 +67,33 @@ a{color:#9ccbff}small{color:#8b96a3}
 <h2>Privacy</h2>
 <p>See the <a href="privacy.html">privacy policy</a> and <a href="licenses.html">third-party notices</a>.</p>
 </section>
+<section dir="rtl" lang="ar">
+<h1>TabuMap – شروط الاستخدام</h1>
+<small>آخر تحديث: نوفمبر 2026</small>
+<h2>الغرض</h2>
+<p>يعرض TabuMap معلومات عامة عن الأحواض والقسائم (غوش وحلقة) للتوجّه والفحص الأولي: حدود القسائم، أرقام الحوض والقسيمة، المساحة المسجّلة والمحسوبة، وروابط إلى المصادر الرسمية.</p>
+<h2>ليست استشارة مهنية</h2>
+<p>المعلومات ليست استشارة قانونية أو تخمينية أو هندسية، ولا تغني عن سند الطابو أو شهادة الحقوق أو معلومات التخطيط الرسمية أو مسّاح مرخّص. قبل أي صفقة أو بناء أو إجراء قانوني، افحص المستندات الرسمية واستشر مختصين.</p>
+<h2>الموقع والحدود</h2>
+<p>الحدود على الخريطة توضيح بياني لا قيمة قانونية له في ترسيم الحدود. دقة GPS في الهاتف عادة بضعة أمتار، لذلك قد تكون قرب الحدّ في قسيمة مجاورة.</p>
+<h2>مصادر البيانات ودقّتها</h2>
+<p>حدود القسائم وصفاتها مأخوذة من طبقة القسائم المفتوحة لمركز مسح إسرائيل (data.gov.il) وتُحدَّث نحو مرة في الشهر. قد تكون ناقصة أو خاطئة أو غير محدّثة. ‏TabuMap ليس خدمة تابعة لوزارة القضاء أو سلطة أراضي إسرائيل أو مركز مسح إسرائيل.</p>
+<p>خريطة الخلفية وصور الأقمار الصناعية من مزوّدين خارجيين، تُعرض للتوضيح فقط ولا تُحدَّث لحظيًا، لذلك قد لا يظهر بناء حديث أو تغييرات أخرى على الأرض. بيانات المخططات من نظام XPLAN التابع لمديرية التخطيط، الذي يعرض المخططات المتاحة إلكترونيًا فقط: قد لا يظهر تخصيص للمخططات القديمة (التي قُدّمت قبل إجراءات "مافات")، ورخص البناء لا تظهر في التطبيق. افحص الوضع التخطيطي الملزم لدى لجنة التخطيط والبناء المحلية.</p>
+<h2>تحديد المسؤولية</h2>
+<p>استخدامك لـ TabuMap على مسؤوليتك. إلى أقصى حد يسمح به القانون، لا يتحمّل TabuMap ولا RabieMan Labs المسؤولية عن أي ضرر مالي أو قانوني مباشر أو غير مباشر ينشأ عن الاعتماد على المعلومات.</p>
+<h2>تواصل</h2>
+<p>RabieMan Labs · <span dir="ltr"><a href="mailto:rabieman.labs+tabumap@gmail.com">rabieman.labs+tabumap@gmail.com</a></span></p>
+<h2>الخصوصية</h2>
+<p>انظر <a href="privacy.html">سياسة الخصوصية</a> و<a href="licenses.html">إشعارات الأطراف الثالثة</a>.</p>
+</section>
+<script>
+/* ?lang=he|en|ar (from the app or the landing page): show only that language. Without it all languages are shown. */
+(function(){var l=new URLSearchParams(location.search).get('lang');if(!l)return;
+ var secs=document.querySelectorAll('section[lang]'),he=document.getElementById('he');
+ if(l==='he'){secs.forEach(function(s){s.style.display='none'});return}
+ if(he)he.style.display='none';document.documentElement.dir=l==='ar'?'rtl':'ltr';document.documentElement.lang=l;
+ var want=l==='ar'?'ar':'en';secs.forEach(function(s){s.style.display=s.getAttribute('lang')===want?'':'none';s.style.borderTop='0';s.style.marginTop='0'});
+ document.querySelectorAll('a[href="privacy.html"],a[href="terms.html"],a[href="licenses.html"]').forEach(function(a){a.href+= '?lang='+l})})();
+</script>
 </body>
 </html>

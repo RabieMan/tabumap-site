@@ -18,11 +18,11 @@ The app code and data pipeline live in the private repo `RabieMan/tabumap-app`. 
 
 | File | What it is |
 | --- | --- |
-| `index.html` | Landing page in the RabieMan Labs / AutoPedia template: hero, screenshots, feature cards (Hebrew, then English) |
-| `privacy.html` | Privacy policy (he/en): no sign-up, location used on the device only, external services listed (incl. the Street View link) |
-| `terms.html` | Terms of use (he/en): not professional advice, boundaries are illustrative, data accuracy, liability |
+| `index.html` | Landing page in the RabieMan Labs template: language switcher (Hebrew · Arabic · English, green), hero, promo video, screenshots, feature cards |
+| `privacy.html` | Privacy policy (he/ar/en, `?lang=he\|ar\|en` shows one): no sign-up, location used on the device only, external services listed (incl. the Street View link) |
+| `terms.html` | Terms of use (he/ar/en): not professional advice, boundaries are illustrative, data accuracy, liability |
 | `licenses.html` | Third-party notices: MapLibre GL, PMTiles, mapbox-gl-rtl-text, Survey of Israel data, OpenFreeMap/OSM, Esri |
-| `img/` | App icon, RabieMan Labs logo, screenshots (`01-gps-he.jpg`, `02-plans-he.jpg`, `03-measure-he.jpg`, `04-pins-he.jpg`) |
+| `img/` | App icon, RabieMan Labs logo, screenshots in Hebrew (`01-sat-he.jpg`, `02-plans-he.jpg`, `03-measure-he.jpg`, `04-pins-he.jpg`) and English (`01-gps-en.jpg` … `04-pins-en.jpg`); Arabic screenshots still to come |
 | `.github/workflows/publish-landing.yml` | Copies landing edits from `main` into `gh-pages` |
 
 Features listed on the landing page: GPS parcel lookup with nearby-parcel warning, block/parcel search, parcel card,
@@ -41,3 +41,5 @@ The app code is **not** published here: it ships only inside the Android app. A 
 ## Contact
 
 rabieman.labs+tabumap@gmail.com
+
+- Language switcher (עברית · العربية · English) at the top, in the app's colour, like the studio home page: one language at a time, remembered with the same `rl_lang` key as rabieman.github.io; `?lang=he|ar|en` or `#ar` / `#en` open a language directly, and the footer's legal links carry the chosen language.

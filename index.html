@@ -36,10 +36,20 @@ h2{margin:44px 0 6px;font-size:22px}.note{color:var(--mut);font-size:13px;margin
 section[lang=en]{direction:ltr;text-align:left;border-top:1px solid var(--line);margin-top:50px}
 footer{border-top:1px solid var(--line);margin-top:40px;padding-top:16px;color:var(--mut);font-size:13px;display:flex;gap:16px;flex-wrap:wrap;align-items:center}footer .by{display:flex;align-items:center;gap:10px;color:#dfe6ee;font-weight:600}footer .by img{width:40px;height:40px;border-radius:50%}
 .vid{position:relative;max-width:860px;margin:6px auto 22px;aspect-ratio:16/9;border-radius:18px;overflow:hidden;border:1px solid var(--line);background:#000 center/cover no-repeat;cursor:pointer;box-shadow:0 20px 60px rgba(0,0,0,.5)}.vid iframe{position:absolute;inset:0;width:100%;height:100%;border:0}.vid .pl{position:absolute;inset:0;margin:auto;width:84px;height:84px;border-radius:50%;background:var(--acc);display:grid;place-items:center;box-shadow:0 0 0 10px rgba(240,166,58,.25);border:0;cursor:pointer}.vid .pl:after{content:"";border-style:solid;border-width:16px 0 16px 26px;border-color:transparent transparent transparent #1a1204;margin-left:6px}.vid small{position:absolute;bottom:12px;left:0;right:0;text-align:center;color:#fff;font-size:14px;text-shadow:0 2px 8px #000}
+
+.lang{margin-inline-start:auto;display:flex;gap:4px;background:var(--card);border:1px solid var(--line);border-radius:22px;padding:3px}
+.lang button{background:none;border:0;color:var(--mut);font:inherit;font-size:14px;font-weight:700;padding:6px 12px;border-radius:18px;cursor:pointer}
+.lang button[aria-pressed="true"]{background:#10b981;color:#0b0f14}
+@media (max-width:480px){header{gap:8px}header img{width:40px;height:40px}header b{font-size:20px}.lang button{padding:5px 8px;font-size:12.5px}}
+html[lang="he"] [data-l]:not([data-l="he"]),html[lang="en"] [data-l]:not([data-l="en"]),html[lang="ar"] [data-l]:not([data-l="ar"]){display:none!important}
+[data-l="en"]{text-align:left}[data-l="en"] .hero{text-align:center}
+[data-l="en"] .f.soon b::after{content:" · soon"}[data-l="ar"] .f.soon b::after{content:" · قريبًا"}
 </style>
 </head>
 <body><div class="wrap">
-<header><img src="img/icon.png" alt=""><b dir="ltr">Tabu<i>Map</i></b><nav><a href="#en">English</a><a href="privacy.html">מדיניות פרטיות · Privacy</a><a href="terms.html">תנאי שימוש · Terms</a></nav></header>
+<header><img src="img/icon.png" alt=""><b dir="ltr">Tabu<i>Map</i></b><div class="lang" role="group" aria-label="Language / שפה / اللغة"><button type="button" data-set="he" aria-pressed="true">עברית</button><button type="button" data-set="ar" aria-pressed="false">العربية</button><button type="button" data-set="en" aria-pressed="false">English</button></div></header>
+
+<div data-l="he">
 
 <div class="hero">
  <h1>על איזו חלקה אתם עומדים?</h1>
@@ -69,10 +79,41 @@ footer{border-top:1px solid var(--line);margin-top:40px;padding-top:16px;color:v
  <div class="f soon"><span>📄</span><b>מפענח נסח טאבו</b><p>משתפים את ה-PDF של הנסח ומקבלים סיכום ברור: בעלים, משכנתאות, הערות אזהרה ועיקולים.</p></div>
 </div>
 <p class="note">ללא הרשמה, ללא פרסומות וללא איסוף מידע אישי. המיקום משמש רק במכשיר. גבולות החלקות מגיעים משכבת החלקות הפתוחה של המרכז למיפוי ישראל (data.gov.il). TabuMap היא יוזמה פרטית של RabieMan Labs, אינה שירות ממשלתי, אינה מקור מוסמך לגבולות ואינה מחליפה נסח טאבו או מדידה של מודד מוסמך.</p>
+</div>
 
-<section lang="en" id="en">
- <h2>Which parcel are you standing on?</h2>
+<div data-l="ar">
+<div class="hero">
+ <h1>على أي قسيمة تقف؟</h1>
+ <p>تحديد الحوض والقسيمة (غوش وحلقة) حسب موقع GPS أو بالبحث، مع حدود القسائم على الخريطة، والتخصيص ومخططات البناء لكل قسيمة، وقياس المساحة بالدونم وإحداثيات الشبكة الإسرائيلية. قريبًا: محلّل لسند الطابو بلغة بسيطة.</p>
+ <div class="badge">قريبًا على Google Play</div>
+</div>
+
+<div class="vid" data-yt="v6cDAliESLg" style="background-image:url(img/promo-poster.jpg)" role="button" tabindex="0" aria-label="شاهد الفيديو – TabuMap"><button class="pl" aria-label="Play"></button><small>شاهد الفيديو · 36 ثانية · يُحمَّل من YouTube عند الضغط</small></div>
+ <div class="grid">
+  <div class="f"><span>📍</span><b>أين أنا؟</b><p>ضغطة واحدة تجد الحوض والقسيمة حسب GPS. عندما تكون قريبًا من الحدود يعرض التطبيق القسائم المجاورة أيضًا.</p></div>
+  <div class="f"><span>🔎</span><b>البحث عن حوض وقسيمة</b><p>اكتب رقم الحوض، أو الحوض والقسيمة، وانتقل مباشرة إلى القسيمة على الخريطة. القسيمة الملغاة أو المدموجة تظهر بعلامة خاصة.</p></div>
+  <div class="f"><span>📐</span><b>بطاقة القسيمة</b><p>المساحة المسجّلة مقابل المساحة المحسوبة من الخريطة، بالدونم، وحالة التسوية وتاريخ التحديث، مع روابط لاستخراج سند الطابو وGovMap والمخططات.</p></div>
+  <div class="f"><span>🛰️</span><b>خريطة وقمر صناعي</b><p>حدود القسائم على خريطة الشوارع أو على صورة القمر الصناعي، ومشاركة القسيمة برابط.</p></div>
+  <div class="f"><span>📷</span><b>Street View</b><p>زرّ في بطاقة القسيمة يفتح Google Street View في النقطة التي اخترتها بالضبط، لترى الأرض من الشارع.</p></div>
+  <div class="f"><span>🧭</span><b>الشبكة الإسرائيلية (ITM)</b><p>موقعك الحيّ وإحداثيات مركز القسيمة بنظام ITM (شرقًا/شمالًا بالأمتار)، مع النسخ بضغطة.</p></div>
+  <div class="f"><span>📏</span><b>قياس المسافة والمساحة</b><p>قِس حدود القسيمة بضغطة، أو حدّد نقاطًا على الخريطة أو حسب GPS، واحصل على طول كل ضلع والمحيط والمساحة بالدونم.</p></div>
+  <div class="f"><span>📍</span><b>مواقعي</b><p>دبابيس على الخريطة حسب GPS أو بضغطة طويلة، مع اسم وإحداثيات وحوض/قسيمة. ضغطة تعيدك إلى النقطة.</p></div>
+  <div class="f"><span>🏗️</span><b>مخططات البناء</b><p>تخصيص القسيمة مع شرح قصير، والمخططات السارية عليها: الحالة، وهل يمكن إصدار ترخيص بموجبها، ورابط إلى "مافات".</p></div>
+  <div class="f"><span>🌐</span><b>العربية والعبرية والإنجليزية</b><p>التطبيق كله بثلاث لغات، بما في ذلك شرح تخصيص الأرض وحالة المخططات. غيّر اللغة بضغطة على 🌐.</p></div>
+  <div class="f soon"><span>📄</span><b>محلّل سند الطابو</b><p>شارك ملف PDF للسند واحصل على ملخّص واضح: المالكون، الرهون، ملاحظات التحذير والحجوزات.</p></div>
+ </div>
+ <p class="note">بدون تسجيل، بدون إعلانات وبدون جمع معلومات شخصية. الموقع يُستخدم على الجهاز فقط. حدود القسائم من طبقة القسائم المفتوحة لمركز مسح إسرائيل (data.gov.il). ‏TabuMap مبادرة خاصة من RabieMan Labs، ليست خدمة حكومية، وليست مصدرًا رسميًا للحدود، ولا تغني عن سند الطابو أو عن مسّاح مرخّص.</p>
+</div>
+
+<div data-l="en" dir="ltr">
+<div class="hero">
+ <h1>Which parcel are you standing on?</h1>
  <p>Find the land block (gush) and parcel (helka) by GPS or by search, with parcel boundaries on the map, land use and building plans for every parcel, area measurement in dunams and Israeli Grid coordinates. Coming next: a plain-language Tabu extract analyzer.</p>
+ <div class="badge">Coming soon on Google Play</div>
+</div>
+
+<div class="vid" data-yt="v6cDAliESLg" style="background-image:url(img/promo-poster.jpg)" role="button" tabindex="0" aria-label="Watch the video – TabuMap"><button class="pl" aria-label="Play"></button><small>Watch the video · 36 seconds · loads from YouTube on click</small></div>
+ <div class="shots"><img src="img/01-gps-en.jpg" alt="Where am I: block and parcel by GPS, with Israeli Grid coordinates"><img src="img/02-plans-en.jpg" alt="Land use and the plans that apply to the parcel"><img src="img/03-measure-en.jpg" alt="Measuring the parcel: each side, perimeter and area in dunams"><img src="img/04-pins-en.jpg" alt="My locations: pins with coordinates and block/parcel"></div>
  <div class="grid">
   <div class="f"><span>📍</span><b>Where am I?</b><p>One tap finds the block and parcel from your GPS position. Near a boundary, nearby parcels are shown too.</p></div>
   <div class="f"><span>🔎</span><b>Block &amp; parcel search</b><p>Type a block, or a block and parcel, and jump straight to it on the map. Cancelled or merged parcels are flagged.</p></div>
@@ -87,9 +128,21 @@ footer{border-top:1px solid var(--line);margin-top:40px;padding-top:16px;color:v
   <div class="f soon"><span>📄</span><b>Tabu extract analyzer</b><p>Share the extract PDF and get a clear summary: owners, mortgages, caveats and liens.</p></div>
  </div>
  <p class="note">No sign-up, no ads, no personal data collected. Your location is used on the device only. Parcel boundaries come from the Survey of Israel's open parcel layer (data.gov.il). TabuMap is a private initiative by RabieMan Labs, not a government service, not an authoritative source for boundaries, and no substitute for a land registry extract or a licensed surveyor.</p>
-</section>
+</div>
 
-<footer><span class="by"><img src="img/rabieman-labs.webp" alt="RabieMan Labs logo" width="40" height="40">© 2026 RabieMan Labs</span><a href="privacy.html">מדיניות פרטיות / Privacy policy</a><a href="terms.html">תנאי שימוש / Terms of use</a><a href="licenses.html">הודעות צד שלישי / Notices</a><a href="https://rabieman.github.io/accessibility.html">הצהרת נגישות / Accessibility</a><span><a href="mailto:rabieman.labs+tabumap@gmail.com">rabieman.labs+tabumap@gmail.com</a></span></footer>
+<footer><span class="by"><img src="img/rabieman-labs.webp" alt="RabieMan Labs logo" width="40" height="40">© 2026 RabieMan Labs</span><a class="lg" href="privacy.html"><span data-l="he">מדיניות פרטיות</span><span data-l="ar">سياسة الخصوصية</span><span data-l="en">Privacy policy</span></a><a class="lg" href="terms.html"><span data-l="he">תנאי שימוש</span><span data-l="ar">شروط الاستخدام</span><span data-l="en">Terms of use</span></a><a class="lg" href="licenses.html"><span data-l="he">הודעות צד שלישי</span><span data-l="ar">إشعارات الأطراف الثالثة</span><span data-l="en">Third-party notices</span></a><a href="https://rabieman.github.io/accessibility.html"><span data-l="he">הצהרת נגישות</span><span data-l="ar">بيان إمكانية الوصول</span><span data-l="en">Accessibility statement</span></a><span><a href="mailto:rabieman.labs+tabumap@gmail.com">rabieman.labs+tabumap@gmail.com</a></span></footer>
 </div><script>document.querySelectorAll('.vid').forEach(v=>{const go=()=>{v.innerHTML='<iframe src="https://www.youtube-nocookie.com/embed/'+v.dataset.yt+'?autoplay=1&rel=0" title="TabuMap" allow="autoplay; encrypted-media; picture-in-picture; fullscreen" allowfullscreen></iframe>';v.style.cursor='default'};v.addEventListener('click',go,{once:true});v.addEventListener('keydown',e=>{if(e.key==='Enter')go()})})</script>
+<script>
+(function(){
+ var root=document.documentElement,btns=document.querySelectorAll('.lang button');
+ var TITLES={he:'TabuMap – גוש וחלקה בשטח, לפי GPS',ar:'TabuMap – الحوض والقسيمة في الميدان حسب GPS',en:'TabuMap – Block and parcel on the spot, by GPS'};
+ function set(l){root.lang=l;root.dir=l==='en'?'ltr':'rtl';document.title=TITLES[l];btns.forEach(function(b){b.setAttribute('aria-pressed',b.dataset.set===l)});
+  document.querySelectorAll('a.lg').forEach(function(a){a.href=a.getAttribute('href').split('?')[0]+'?lang='+l});try{localStorage.setItem('rl_lang',l)}catch(e){}}
+ var q=new URLSearchParams(location.search).get('lang'),h=location.hash.slice(1),saved=null;try{saved=localStorage.getItem('rl_lang')}catch(e){}
+ var nav=(navigator.language||'he').toLowerCase(),ok=function(x){return x==='he'||x==='ar'||x==='en'};
+ set(ok(q)?q:ok(h)?h:ok(saved)?saved:nav.indexOf('he')===0||nav.indexOf('iw')===0?'he':nav.indexOf('ar')===0?'ar':'en');
+ btns.forEach(function(b){b.addEventListener('click',function(){set(b.dataset.set)})});
+})();
+</script>
 </body>
 </html>
