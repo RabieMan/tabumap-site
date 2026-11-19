@@ -73,5 +73,36 @@ a{color:#9ccbff}small{color:#8b96a3}[dir=ltr]{text-align:left}
 <h2>Contact</h2>
 <p>Questions about this policy: <a href="mailto:rabieman.labs+tabumap@gmail.com">rabieman.labs+tabumap@gmail.com</a></p>
 </section>
+<section dir="rtl" lang="ar">
+<h1>TabuMap – سياسة الخصوصية</h1>
+<small>آخر تحديث: نوفمبر 2026</small>
+<p>تسري هذه السياسة على TabuMap، على الويب وكتطبيق أندرويد، الذي تنشره <b>RabieMan Labs</b>. ‏TabuMap مبادرة خاصة، وليست خدمة تابعة لوزارة القضاء أو لمركز مسح إسرائيل أو لأي جهة حكومية أخرى.</p>
+<h2>ما الذي نجمعه</h2>
+<p>لا نجمع معلومات شخصية. لا يوجد تسجيل ولا إعلانات ولا أدوات تتبّع أو تحليلات.</p>
+<h2>الموقع</h2>
+<p>عند الضغط على "أين أنا؟" يُستخدم موقعك على الجهاز فقط لإيجاد القسيمة التي تقف فيها، ولا يُرسل إلينا ولا نحفظه. بعد ذلك يستمر تحديث الموقع على الشاشة (النقطة الزرقاء وإحداثيات الشبكة الإسرائيلية) ما دام التطبيق مفتوحًا، ويتوقف عندما ينتقل إلى الخلفية. نقاط القياس تبقى على الجهاز أيضًا. يمكن استخدام TabuMap دون إذن الموقع، بالضغط على الخريطة أو بالبحث.</p>
+<h2>ما يبقى على جهازك</h2>
+<p>الإعدادات (مثل نوع الخريطة واللغة)، والمواقع التي تثبّتها، ونقاط القياس، وقائمة القسائم التي تتابعها (مع آخر حالة مخططات فُحصت) تُحفظ فقط في التخزين المحلي للجهاز ولا تُرسل إلينا أبدًا. حذف التطبيق أو مسح بيانات المتصفح يحذفها.</p>
+<h2>خدمات خارجية</h2>
+<p>تُحمَّل بيانات القسائم من موقعنا المستضاف على GitHub Pages. خريطة الخلفية من OpenFreeMap وصور الأقمار الصناعية من Esri. كما في أي تطبيق خرائط، تتلقى هذه الخدمات عنوان IP ومنطقة الخريطة المعروضة، وفق سياساتها. نحن لا نتلقى هذه الطلبات ولا نحفظها. روابط خدمة استخراج سند الطابو وGovMap وXPLAN وموقع العقارات الحكومي وGoogle Street View تُفتح في تلك المواقع أو التطبيقات. عند فتح بطاقة القسيمة يرسل التطبيق إلى مديرية التخطيط (خدمة خرائط XPLAN العامة، ags.iplan.gov.il) نقطة مركز القسيمة فقط، لعرض المخططات والتخصيص السارية عليها. لا يُرسل شيء يعرّف بك سوى عنوان IP الذي يرافق كل طلب عبر الشبكة. الضغط على Street View يرسل إلى Google النقطة التي اخترتها فقط. في هذا الموقع لا يُحمَّل فيديو YouTube (بوضع youtube-nocookie) إلا بعد الضغط عليه.</p>
+<p>عند متابعة قسيمة يسأل التطبيق خدمة XPLAN التابعة لمديرية التخطيط عن المخططات السارية عليها، عند فتح التطبيق ومرة كل 12 ساعة على الأكثر. تُرسل إحداثيات حدود القسيمة فقط (ولا شيء يعرّف بك). عند التشغيل يقرأ التطبيق أيضًا ملف إعدادات صغيرًا (config.json) من موقعنا؛ لا يحتوي ولا يجمع أي معلومات عنك.</p>
+<h2>ميزات مستقبلية</h2>
+<p>قبل إضافة محلّل سند الطابو ستُحدَّث هذه السياسة لتبيّن بدقة ما الذي يُرسل للمعالجة، وإلى أين، وما الذي لا يُحفظ.</p>
+<h2>حفظ البيانات وحذفها</h2>
+<p>لا نحفظ بيانات المستخدمين على خوادمنا. كل شيء يبقى على جهازك.</p>
+<h2>تغييرات على هذه السياسة</h2>
+<p>تُنشر التحديثات في هذه الصفحة مع تاريخ التحديث.</p>
+<h2>تواصل</h2>
+<p>أسئلة حول هذه السياسة: <span dir="ltr"><a href="mailto:rabieman.labs+tabumap@gmail.com">rabieman.labs+tabumap@gmail.com</a></span></p>
+</section>
+<script>
+/* ?lang=he|en|ar (from the app or the landing page): show only that language. Without it all languages are shown. */
+(function(){var l=new URLSearchParams(location.search).get('lang');if(!l)return;
+ var secs=document.querySelectorAll('section[lang]'),he=document.getElementById('he');
+ if(l==='he'){secs.forEach(function(s){s.style.display='none'});return}
+ if(he)he.style.display='none';document.documentElement.dir=l==='ar'?'rtl':'ltr';document.documentElement.lang=l;
+ var want=l==='ar'?'ar':'en';secs.forEach(function(s){s.style.display=s.getAttribute('lang')===want?'':'none';s.style.borderTop='0';s.style.marginTop='0'});
+ document.querySelectorAll('a[href="privacy.html"],a[href="terms.html"],a[href="licenses.html"]').forEach(function(a){a.href+= '?lang='+l})})();
+</script>
 </body>
 </html>
