@@ -1,0 +1,74 @@
+[
+ {
+  "id": "north",
+  "file": "tiles/north.pmtiles",
+  "parcels": 171875,
+  "mb": 38.2,
+  "bbox": [
+   34.7571,
+   32.68212,
+   35.89538,
+   33.33524
+  ]
+ },
+ {
+  "id": "haifa",
+  "file": "tiles/haifa.pmtiles",
+  "parcels": 265804,
+  "mb": 56.3,
+  "bbox": [
+   34.6494,
+   32.4267,
+   35.81544,
+   32.88554
+  ]
+ },
+ {
+  "id": "sharon",
+  "file": "tiles/sharon.pmtiles",
+  "parcels": 135207,
+  "mb": 24.5,
+  "bbox": [
+   34.55162,
+   32.08948,
+   35.56807,
+   32.46713
+  ]
+ },
+ {
+  "id": "center",
+  "file": "tiles/center.pmtiles",
+  "parcels": 211048,
+  "mb": 35.5,
+  "bbox": [
+   34.42018,
+   31.85714,
+   35.22067,
+   32.13981
+  ]
+ },
+ {
+  "id": "jerusalem",
+  "file": "tiles/jerusalem.pmtiles",
+  "parcels": 165289,
+  "mb": 36.9,
+  "bbox": [
+   34.32597,
+   31.52537,
+   35.27179,
+   31.90034
+  ]
+ },
+ {
+  "id": "south",
+  "file": "tiles/south.pmtiles",
+  "parcels": 148552,
+  "mb": 36.1,
+  "bbox": [
+   34.26742,
+   29.45527,
+   35.47601,
+   31.57439
+  ]
+ }
+]
