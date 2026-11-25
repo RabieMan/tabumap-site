@@ -22,7 +22,7 @@ The app code and data pipeline live in the private repo `RabieMan/tabumap-app`. 
 | `privacy.html` | Privacy policy (he/ar/en, `?lang=he\|ar\|en` shows one): no sign-up, location used on the device only, external services listed (incl. the Street View link) |
 | `terms.html` | Terms of use (he/ar/en): not professional advice, boundaries are illustrative, data accuracy, liability |
 | `licenses.html` | Third-party notices: MapLibre GL, PMTiles, mapbox-gl-rtl-text, Survey of Israel data, OpenFreeMap/OSM, Esri |
-| `img/` | App icon, RabieMan Labs logo, the same four screenshots in every language (`01-gps`, `02-plans`, `03-measure`, `04-pins`, each `-he` / `-ar` / `-en`), taken from the store screenshots (the "Store screenshots" workflow in tabumap-app, branches `store-shots`, `store-shots-en`, `store-shots-ar`) |
+| `img/` | App icon, RabieMan Labs logo, the same four screenshots in every language (`00-hero` – the satellite hero image from `tabumap-app/store/hero-<lang>.png`, then `02-plans`, `03-measure`, `04-pins`, each `-he` / `-ar` / `-en`), taken from the store screenshots (the "Store screenshots" workflow in tabumap-app, branches `store-shots`, `store-shots-en`, `store-shots-ar`, `store-shots-hero`); an Esri credit line sits under the screenshots in every language |
 | `.github/workflows/publish-landing.yml` | Copies landing edits from `main` into `gh-pages` |
 
 Features listed on the landing page: GPS parcel lookup with nearby-parcel warning, block/parcel search, parcel card,
