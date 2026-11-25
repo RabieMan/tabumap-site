@@ -1,5 +1,7 @@
 # TabuMap – site
 
+**TabuMap by RabieMan Labs — Serverless Israeli Cadastre & Land Parcel Explorer**
+
 Public landing page, privacy policy, terms and third-party notices for TabuMap, served by GitHub Pages.
 TabuMap finds the land block (gush) and parcel (helka) you are standing on, by GPS or search, from the Survey of
 Israel's open parcel layer. A private initiative by RabieMan Labs – not a government service.
