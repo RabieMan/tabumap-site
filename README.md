@@ -8,7 +8,7 @@ Israel's open parcel layer. A private initiative by RabieMan Labs – not a gove
 
 The app code and data pipeline live in the private repo `RabieMan/tabumap-app`. This repo holds only what must be public.
 
-**Status:** in development · Android app v0.8 (test APKs in the private repo) · coming soon to Google Play
+**Status:** in Google Play closed testing and submitted to App Review (Nov 2026) · coming soon to Google Play and the App Store
 
 - Home: https://rabieman.github.io/tabumap-site/
 - Privacy policy: https://rabieman.github.io/tabumap-site/privacy.html
